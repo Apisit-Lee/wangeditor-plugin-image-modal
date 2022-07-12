@@ -1,0 +1,45 @@
+{
+  "name": "wangeditor-plugin-image-modal",
+  "version": "1.0.0",
+  "description": "WangEditor插件，从媒体库插入图片",
+  "main": "./dist/wangeditor-plugin-image-modal.umd.js",
+  "module": "./dist/wangeditor-plugin-image-modal.es.js",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/wangeditor-plugin-image-modal.es.js",
+      "require": "./dist/wangeditor-plugin-image-modal.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "pub": "vite build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apisit-Lee/wangeditor-plugin-image-modal.git"
+  },
+  "keywords": [
+    "wangeditor",
+    "plugin",
+    "image"
+  ],
+  "author": "Apisit Lee",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/Apisit-Lee/wangeditor-plugin-image-modal/issues"
+  },
+  "homepage": "https://github.com/Apisit-Lee/wangeditor-plugin-image-modal#readme",
+  "peerDependencies": {
+    "@wangeditor/editor": ">=5.0.0",
+    "snabbdom": "^3.3.1"
+  },
+  "devDependencies": {
+    "@wangeditor/editor": "^5.0.0",
+    "snabbdom": "^3.3.1",
+    "typescript": "^4.2.3",
+    "dom7": "^3.0.0",
+    "vite": "^2.9.9"
+  }
+}

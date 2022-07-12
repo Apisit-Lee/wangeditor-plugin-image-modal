@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wangEditor imageModal demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/@wangeditor/editor@latest/dist/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <script type="module" src="./index.ts"></script>
+</head>
+
+<body style="margin: 0 20px;">
+  <p>wangEditor imageModal demo</p>
+
+  <div>
+    <div id="toolbar-container" style="border: 1px solid #ccc; border-bottom: none;"></div>
+    <div id="editor-container" style="border: 1px solid #ccc; height: 400px;"></div>
+  </div>
+
+  <div style="margin-top: 20px; display: flex;">
+    <div style="flex: 1; padding-right: 5px;">
+      <textarea id="text-html" style="width: 100%; height: 300px;"></textarea>
+    </div>
+    <div style="flex: 1; padding-left: 5px;">
+      <textarea id="text-json" style="width: 100%; height: 300px;"></textarea>
+    </div>
+  </div>
+
+  <div id="image-modal-mask"></div>
+  <div id="image-modal">
+    <header id="image-modal-header">选择图片</header>
+    <section id="image-modal-body">
+      <textarea placeholder="图片地址，逗号分隔" id="image-src-textarea"></textarea>
+    </section>
+    <footer id="image-modal-footer">
+      <button id="image-modal-ok">确定</button>
+      <button id="image-modal-cancel">取消</button>
+    </footer>
+  </div>
+</body>
+
+</html>

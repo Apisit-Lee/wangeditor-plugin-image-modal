@@ -1,0 +1,77 @@
+textarea {
+  outline: none;
+}
+
+#image-modal {
+  display: none;
+  position: fixed;
+  width: 600px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 5px;
+  z-index: 1000000;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#image-modal-header {
+  height: 50px;
+  line-height: 50px;
+  flex-shrink: 0;
+  padding: 0 24px;
+}
+
+#image-modal-body {
+  flex: 1;
+  padding: 24px;
+}
+
+#image-src-textarea {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+#image-modal-footer {
+  height: 50px;
+  line-height: 50px;
+  flex-shrink: 0;
+  padding: 0 24px;
+}
+
+#image-modal-mask {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#mention-modal input {
+  width: 100px;
+  outline: none;
+}
+
+#mention-modal ul {
+  padding: 0;
+  margin: 0;
+}
+
+#mention-modal ul li {
+  list-style: none;
+  cursor: pointer;
+  padding: 3px 0;
+  text-align: left;
+}
+
+#mention-modal ul li:hover {
+  /* background-color: #f1f1f1; */
+  text-decoration: underline;
+}
